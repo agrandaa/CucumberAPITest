@@ -12,7 +12,7 @@ public class Steps {
     @When("I send GET request with successful data")
     public void i_send_get_request_with_successful_data() {
             response = RestAssured.given()
-                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2SFesydiM")
+                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2Szasxaa")
                 .when()
                 .get("https://api.apilayer.com/exchangerates_data/latest")
                 .then()
@@ -22,7 +22,7 @@ public class Steps {
     @When("I send GET request with wrong request data")
     public void i_send_get_request_with_wrong_request_data() {
         response = RestAssured.given()
-                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2SFesydiM")
+                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2Szasxaa")
                 .when()
                 .get("https://api.apilayer.com/exchangerates_data/latestxxxxxx")
                 .then()
@@ -42,7 +42,7 @@ public class Steps {
     @When("I send GET request but the endpoint is forbidden to me")
     public void i_send_get_request_but_the_endpoint_is_forbidden_to_me() {
         response = RestAssured.given()
-                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2SFesydiM")
+                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2Szasxaa")
                 .when()
                 .get("https://api.apilayer.com/number_verification/countries")
                 .then()
@@ -52,7 +52,7 @@ public class Steps {
     @When("I send GET request but the endpoint is not found")
     public void i_send_get_request_but_the_endpoint_is_not_found() {
         response = RestAssured.given()
-                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2SFesydiM")
+                .header("apikey", "23W5LiOqyGr4zlIAZuMmojn2Szasxaa")
                 .when()
                 .get("https://api.apilayer.com/exchangerates_dataaaa/latest")
                 .then()
